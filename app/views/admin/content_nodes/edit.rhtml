@@ -11,11 +11,9 @@
 	  <br/>
 
 
-	    <%= render_partial 'form' %>
+  <%= render :partial => "form" %>
 	    <div class="line">&nbsp;</div>
 	    <%= submit_tag 'Save This Content', :class => 'button hundredthirty' %>
-
-
 		<div style="float:right;">
 			<%= link_to 'Show', :action => 'show', :id => @content_node %> |
 		  <%= link_to 'Delete This Content', {:action => 'destroy', :id => @content_node}, :confirm => 'Are you sure?', :class => 'action' %>
